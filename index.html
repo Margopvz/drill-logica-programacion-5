@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adivinanza del número</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Summit&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Adivinanza del número</h1>
+    <h3>El juego consiste en adivinar un número entre 1 y 100. Tienes 5 intentos para adivinar el número. Si adivinas el número correcto, ¡ganas! Si no, pierdes.</h3>
+    <div class="input-group">
+    <label for="number">Intenta adivinar el número:</label>
+    <input type="number" id="number" placeholder="Ingresa un número" min="1" max="100" required />
+    </div>
+    <button id="guessButton" onclick="checkGuess()">Adivinar</button>
+    <div id="result"></div>
+    <script src="index.js"></script>
+</body>
+</html>

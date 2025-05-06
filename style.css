@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(168, 224, 244);
+}
+h1 {
+    font-family: 'Summit', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #262525;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+label [for="number"] {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--blue-dark);
+    margin-bottom: 6px;
+    user-select: none;
+    display: inline-block;
+}
+:root {
+    --blue-primary: #1E90FF;      
+    --blue-dark: #1565C0;         
+    --coral-accent: #FF6F61;      
+    --white: #FFFFFF;
+}
+#number, #guessButton {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--blue-primary);
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+#number {
+    width: 150px;
+    margin-right: 10px;
+    box-shadow: inset 0 2px 5px rgba(30, 144, 255, 0.2);
+}
+#guessButton {
+    background-color: var(--blue-primary);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px rgba(21, 101, 192, 0.4);
+    font-weight: bold;
+}
+#number:focus {
+    border-color: var(--blue-dark);
+    box-shadow: 0 0 8px var(--blue-dark);
+}#guessButton:hover {
+    background-color: var(--coral-accent);
+    box-shadow: 0 6px 10px rgba(255, 111, 97, 0.6);
+    transform: scale(1.05);
+}
